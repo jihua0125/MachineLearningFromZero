@@ -30,22 +30,31 @@
 
 #### 安装Anaconda
 1. 进入上文所提供的下载地址（英文），按照`Windows`系统选择合适的版本，这里选择64位下载；
-*Note*： 如果你不清楚你的操作系统是`32位`还是`64位`，可以右击 *开始* 按钮, 选择 *系统* ，在弹出的窗口中找到 *系统类型*。
+*提示*： 如果你不清楚你的操作系统是`32位`还是`64位`，可以右击 *开始* 按钮, 选择 *系统* ，在弹出的窗口中找到 *系统类型*。
 
 2. 下载后，打开安装文件，按照提示操作；
 
 3. 安装完成后，打开`cmd`(命令提示符)，输入`python`并按下`Enter`(回车键）。如果正确安装，你将会看到如下显示：
-  `Python 3.6.3 |Anaconda custom (64-bit)| (default, Oct 15 2017, 03:27:45) [MSC v.1900 64 bit (AMD64)] on win32
-  Type "help", "copyright", "credits" or "license" for more information.
-  >>> `
+  `Python 3.6.3 |Anaconda custom (64-bit)| (default, Oct 15 2017, 03:27:45) [MSC v.1900 64 bit (AMD64)] on win32`
+  `Type "help", "copyright", "credits" or "license" for more information.`
+  `>>>`
 
 4. 你可以键入`print("hello world")`，开始你的`python`编程之旅吧。
 
 #### 使用Jupyter Notebook
 
-1. 在`cmd`中输入命令`jupyter notebook`, 如果命令正确执行，你将会看到
-![`Jupyter Notebook`](https://1drv.ms/i/s!Ar9Ad4Z1DhZtj8kOU99g1eNi986DMA)
+1. 在`cmd`中输入命令`jupyter notebook`, 如果命令正确执行，你将会在浏览器中看到
+<img src="https://i3vj1w-bn1305.files.1drv.com/y4mK6b8YeA3dNs3dVM93-tqbfGKbaejgzcfjVpi11gUTggkuWHOctSuO5dkNyYWRufiCVATLAVN9hjVkMe-fXYnG751ly-LRm9mHePkb568Cr-R-1wu2tEpijYPcuyjaOGAH4HQhu7e7YExYarHKjLWcN_80Gv_SnbYBXTFSEpgwMwb-CV5TuLjlG-vCdfb80LSUX9I_lNsFCYrzk2ITKCH8A?width=410&height=519&cropmode=none" width="410" height="519" />
 
-### 安装R
+2. 新建一个笔记本(`Notebook`): 点击右上角的`new`按钮，在下拉菜单中选择`Python 3`，这样就新建了一个基于`Python 3`内核的笔记本， 其中内核是指使用`Python 3`作为解释器。
 
-使用`R`的话,最好配合集成开发环境(IDE)`RStudio`一起使用。
+3. 在新建的笔记本的第一个单元（`cell`）中输入`print("hello world")`， 并按下`Shift + Enter`组合键执行, 如果正确执行，你将会看到如下图所示结果：
+<img src="https://zqk5dw-bn1305.files.1drv.com/y4mDKqPFY8PSnjCNqnqkzAgoe9zH_UALOE6nWsE5wdB43qnCTAoD1mfY2pRTz3DzIhRaIduAe2Kh3RYDtzxOWqLl5pvHvu7gr_jYsNC0D_keGEXyvJlsnA7_7OBR8a1cNk88TwTK3eL6niIAvxcba2cvaoDajT5aeIodKktBtf0kVKSCjPuxjpBA1Gu0Ps2vCVJ88lMpnSbgD-v-2VzG8qriQ?width=813&height=294&cropmode=none" width="813" height="294" />
+
+*提示*： 单元格内为执行的代码，单元格下方为输出结果，单元格左侧[]内数字表示执行顺序，如果该单元格尚未执行，则[]为空。
+
+`Shift + Enter`为执行当前单元格并将光标移动到下一单元格；`Ctrl + Enter`为执行当前单元格，并不会转移光标。
+
+### 结语
+
+本篇基础教程先介绍到这里，下一讲将会介绍机器学习的基本概念。
