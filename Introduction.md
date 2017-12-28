@@ -9,6 +9,7 @@
 - **连续数据**：如身高、体重等
 - **类别数据**：如性别、职业等
 - **序数数据**：如排名、级别等
+
 *注意*： 序列数据区别于类别数据，类别数据中各个类别是并列关系，譬如性别中男女并不存在先后关系；而序列数据如排名，则存在明确的优劣关系。
 在统计学上，连续数据对应的是连续型变量，而后两者则对应的是离散型变量。当然以上都是量化数据或者说结构化数据，对于非量化数据而言（譬如文本、图像等），我们需要将其转化为可以被量化的数据。比如在自然语言处理领域，对于文本信息常用的量化方式就有词袋（Bag-of-words）模型和词向量（word vector）模型。这些将在以后进一步的讲解。
 
@@ -25,10 +26,11 @@
 表面看来，数据科学的方法和传统方法解决问题并无太大不同，但是其中还是有两点不太一样。一是 **数据量大**，很多领域（如互联网，金融等）使用的数据是以百万、十亿甚至兆来计算；而巨大的数据也引出了第二点不同，即 **使用机器学习方法** 建模。与传统方法不同的是，数据科学一般不依赖人对数据进行分析，而是利用计算机来对数据进行建模，利用一些 **机器学习算法** 来提取数据中的规律，从而进行后续分析。下面我们以一个案例来讲解这个流程。
 
 ### 案例分析
- > “I made the first one, I said, 'Let me see if I can make two.'
-  I made the second one, I said, 'Let me see if I can make three.'
-I MADE THE THIRD ONE, I SAID, 'I’VE GOT A RHYTHM GOING.'”
--Kobe Bryant, on setting NBA single-game 3-point record*
+> *“I made the first one, I said, 'Let me see if I can make two.'*
+>  *I made the second one, I said, 'Let me see if I can make three.'*
+> *I MADE THE THIRD ONE, I SAID, 'I’VE GOT A RHYTHM GOING.'”*
+
+> -Kobe Bryant, on setting NBA single-game 3-point record
 
 以笔者做过的一个[简单项目](https://jihua0125.github.io/)为例。这里我们的问题是“篮球中是不是真的有‘手热’的情况”。 这个问题比较抽象，因此我们需要具体定义一下问题。‘手热’可以理解为连续进球，我们可以不同方法定义手热，比如：
 - 上一个球投进了，这一个球就更可能进；
